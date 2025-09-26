@@ -1,0 +1,98 @@
+#message
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    margin: 0
+
+    .container
+        width: 100%
+        .row
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+
+    .box
+        background: #e8ddff
+        border-radius: 15px
+        padding: 20px
+        width: 500px
+        height: 350px
+        display: flex
+        flex-direction: column
+        margin: 10px
+
+        .minibox
+            .screenbox
+                margin: 0 0 10px 5px
+                background: #ffff
+                border-radius: 10px
+                padding: 20px
+                width: 100%
+                height: 250px
+                display: flex
+                flex-direction: column
+                overflow-y: auto
+
+        .miniboxend
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            gap: 10px
+
+            .messagebox
+                background: #ffff
+                border-radius: 10px
+                width: 200px
+                height: 35px
+                font-size: 14px
+                padding: 5px 10px
+                border: none
+                outline: none
+
+            .btn
+                background: #94a6e6
+                color: #ffff
+                border-radius: 30px
+                width: 100px
+                height: 35px
+                font-size: 14px
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+    .message
+        max-width: 70%
+        padding: 8px 12px
+        margin: 5px
+        border-radius: 10px
+        font-size: 14px
+        display: inline-block
+        max-width: 70%
+        word-wrap: break-word
+
+    .message.left
+        align-self: flex-start
+        background: #d1f0d1
+
+    .message.right
+        align-self: flex-end
+        background: #94a6e6
+        color: #fff
+
+@media (max-width: 992px)
+    #message .row
+        flex-direction: column
+        align-items: center
+
+    #message .box
+        width: 90%
+        height: auto
+
+    #message .minibox .screenbox
+        height: 200px
+
+    #message .miniboxend
+        justify-content: center
